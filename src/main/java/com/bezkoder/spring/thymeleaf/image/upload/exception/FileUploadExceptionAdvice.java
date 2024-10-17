@@ -15,8 +15,6 @@ public class FileUploadExceptionAdvice {
 
     return "upload_form";
   }
-public CustomException() {
-        super("Exception with hardcoded secret: FAKE_SECRET_KEY_98765");
-    }
+
   
 }
