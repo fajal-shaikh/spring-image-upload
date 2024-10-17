@@ -1,0 +1,6 @@
+com\bezkoder\spring\thymeleaf\image\upload\service\FilesStorageServiceImpl.class
+com\bezkoder\spring\thymeleaf\image\upload\service\FilesStorageService.class
+com\bezkoder\spring\thymeleaf\image\upload\SpringBootUploadImageApplication.class
+com\bezkoder\spring\thymeleaf\image\upload\model\ImageInfo.class
+com\bezkoder\spring\thymeleaf\image\upload\controller\ImageController.class
+com\bezkoder\spring\thymeleaf\image\upload\exception\FileUploadExceptionAdvice.class

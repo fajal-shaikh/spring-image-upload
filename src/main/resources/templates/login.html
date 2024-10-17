@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+  <title>FileUpload Secure</title>
+
+  <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+  <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</head>
+
+<body>
+  
+
+  <div class="container-fluid" style="max-width: 600px; margin: 0 auto;">
+    <h2 class="text-center">Login</h2>
+     <table>
+  	<tr>
+  		<td>UserName</td>
+  		<td><input type="text" id="txtUsername" maxlength="10"></td>
+  	</tr>
+  	<tr>
+  		<td>Password</td>
+  		<td><input type="password" id="txtpassword" maxlength="10"></td>
+  	</tr>
+  	<tr>
+  		<td colspan="2">
+  		<button onclick="funLogin()" class="btn btn-sm btn-outline-success float-right" type="submit">
+        	Login
+      </button>
+  		</td>
+  	</tr>
+  </table>
+  </div>
+ 
+  <div th:replace="fragments/footer :: footer"></div>
+
+  <script type="text/javascript">
+       //	window.location = '/img';
+     function funLogin()
+     {
+    	 var _varid = document.getElementById("txtUsername").value;
+    	 var _varpass = document.getElementById("txtpassword").value;
+    	 //alert(_varid + "-" + _varpass);
+    	 if(_varid == "valid" && _varpass == "valid")
+    		 {
+    		 	window.location = '/img';
+    		 }
+    	 else
+    		 {
+    		    alert("Invalid Credential");
+    		 }
+     }
+    
+  </script>
+
+</body>
+
+</html>
