@@ -104,10 +104,5 @@ public class ImageController {
 
     return "redirect:/images";
   } 
-  @GetMapping("/secret")
-    public String getSecret() {
-        // Intentionally hardcoded secret for testing
-        String apiKey = "FAKE_API_KEY_12345";
-        return "The API key is: " + apiKey;
-    }
+
 }
